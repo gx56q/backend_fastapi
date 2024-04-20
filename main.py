@@ -7,7 +7,7 @@ from sqlalchemy.orm import sessionmaker
 from models import Charity, CharityPhoto, CharityProject, ProjectPhoto, \
     ProjectComment, ProjectCategory, ProjectCategoryMapping
 
-DATABASE_URL = "postgresql://postgres:postgres@localhost/charity_database"
+DATABASE_URL = "postgresql://fastapiuser:fastapi@localhost/charity_database"
 
 engine = create_engine(DATABASE_URL)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)

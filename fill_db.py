@@ -5,7 +5,7 @@ from datetime import datetime
 from models import Charity, CharityPhoto, CharityProject, ProjectPhoto, ProjectComment, ProjectCategory, ProjectCategoryMapping
 
 # Создание соединения с базой данных
-DATABASE_URL = "postgresql://postgres:postgres@localhost/charity_database"  # Замените username, password, localhost и charity_database на ваши реальные данные
+DATABASE_URL = "postgresql://fastapiuser:fastapi@localhost/charity_database"  # Замените username, password, localhost и charity_database на ваши реальные данные
 engine = create_engine(DATABASE_URL)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
